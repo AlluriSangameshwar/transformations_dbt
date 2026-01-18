@@ -1,0 +1,10 @@
+namespace: {{ helm.namespace }}
+
+image:
+  tag: {{ helm.image_tag }}
+
+dbt:
+  projectId: {{ bq.project_id }}
+  dataset: {{ bq.dataset }}
+
+schedule: "{{ helm.schedule }}"
