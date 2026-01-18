@@ -1,5 +1,0 @@
-env:
-  - name: DBT_PROJECT_ID
-    value: {{ .Values.dbt.projectId }}
-  - name: DBT_DATASET
-    value: {{ .Values.dbt.dataset }}
