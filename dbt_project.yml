@@ -1,0 +1,8 @@
+name: {{ client_name }}_dbt
+version: 1.0
+
+profile: banking_profile
+
+models:
+  {{ client_name }}:
+    materialized: incremental
