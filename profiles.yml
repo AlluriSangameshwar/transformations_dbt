@@ -1,0 +1,10 @@
+banking_profile:
+  target: {{ dbt.target }}
+  outputs:
+    prod:
+      type: bigquery
+      method: service-account
+      project: {{ bq.project_id }}
+      dataset: {{ bq.dataset }}
+      location: {{ bq.location }}
+      threads: {{ dbt.threads }}
